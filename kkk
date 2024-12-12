@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educación Interactiva</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos a Educación Interactiva</h1>
+    </header>
+    <main>
+        <div class="section">
+            <h2>¿Qué aprenderemos hoy?</h2>
+            <p>Explora temas como matemáticas, ciencia, e historia con nuestras herramientas interactivas.</p>
+        </div>
+        <div class="section">
+            <h3>Prueba tus conocimientos</h3>
+            <p>Responde a la siguiente pregunta:</p>
+            <p><strong>¿Cuál es la capital de Francia?</strong></p>
+            <button onclick="mostrarRespuesta()">Mostrar respuesta</button>
+            <p id="respuesta" style="display:none;">La capital de Francia es <strong>París</strong>.</p>
+        </div>
+    </main>
+    <footer>
+        &copy; 2024 Educación Interactiva. Todos los derechos reservados.
+    </footer>
+
+    <script>
+        function mostrarRespuesta() {
+            document.getElementById('respuesta').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
